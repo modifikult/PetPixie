@@ -1,0 +1,40 @@
+section.content {
+  margin: 91px 0;
+  @include media-breakpoint-down(lg) {
+    margin: 59px 0;
+  }
+
+  .content {
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 34px;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__author {
+      padding: 24.5px 38px;
+      border: 1px solid $gray-100;
+      border-radius: 8px;
+    }
+
+    &__text {
+      font-size: 1.25rem;
+
+      ul {
+        padding-left: 26px;
+
+        li {
+          list-style: disc;
+
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

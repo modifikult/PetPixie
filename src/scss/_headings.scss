@@ -1,0 +1,40 @@
+@mixin heading-span {
+  color: $pink !important;
+  font-family: $font-heading-2;
+  font-weight: normal !important
+}
+
+
+h1 {
+  font-size: $h1-font-size !important;
+  span {
+    font-size: $h1-font-size * 1.1 !important;
+    @include heading-span;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: $h1-font-size * .75 !important;
+    span {
+      font-size: $h1-font-size * .75 * 1.1 !important;
+      @include heading-span;
+    }
+  }
+}
+
+h5 {
+  font-size: $h5-font-size !important;
+  font-weight: 500;
+  span {
+    font-size: $h5-font-size !important;
+    color: $pink !important;
+  }
+}
+
+h6 {
+  font-size: $h6-font-size !important;
+  font-weight: 500;
+  span {
+    font-size: $h6-font-size !important;
+    color: $pink !important;
+  }
+}

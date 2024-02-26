@@ -1,0 +1,273 @@
+//---------------------------------------------
+//
+//  Variables
+//
+//    1. Bootstrap Fonts
+//    2. Bootstrap Globals
+//    3. Bootstrap Colors
+//    4. Bootstrap Container Width
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Bootstrap Fonts
+//---------------------------------------------
+
+$font-family-base:  LotaGrotesque, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-heading-1:     CircularStd, Helvetica, sans-serif !default;
+$font-heading-2:     Delicious, Helvetica, sans-serif !default;
+
+//---------------------------------------------
+// 2. Bootstrap Globals
+//---------------------------------------------
+
+
+
+//---------------------------------------------
+// 3. Bootstrap Colors
+//---------------------------------------------
+
+$gray-50: #f5f5f5;
+$gray-100: #d9dcdd !default;
+$gray-200: #b3b8bb !default;
+$gray-300: #8d9598 !default;
+$gray-400: #677176 !default;
+$gray-500: #414e54 !default;
+$gray-600: #343e43 !default;
+$gray-700: #272f32 !default;
+$gray-800: #1a1f22 !default;
+$gray-900: #0d1011 !default;
+$gray-transparent: rgba(103, 113, 118, 0.5) !default;
+
+$blue:    #2e4eb1 !default;
+$pink:    #eb5582 !default;
+$teal:    #00ffb9 !default;
+$yellow:  #ffe557 !default;
+$cyan:    #0dcaf0 !default;
+$red:     #EF4444 !default;
+
+$blue-600: #253E8E;
+
+$cyan-300: #EAFAFF;
+$cyan-900: #126886;
+
+$pink-50: #FFEBF1;
+$pink-500: #cc3863;
+
+
+$teal-50: #DDFDF2;
+$teal-400: #33FFC7;
+$teal-600: #00CC94;
+$teal-700: #00996F;
+
+$yellow-50: #FFFCDD;
+$yellow-600: #F0D43D;
+$yellow-800: #C0A618;
+
+
+$primary:     $blue;
+$secondary:   $pink;
+$tertiary:    $teal;
+$dark:        $gray-700;
+
+$body-color:  $gray-600 !default;
+
+//---------------------------------------------
+// 4. Bootstrap Container Width
+//---------------------------------------------
+/*
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+*/
+
+$font-size-base: 1rem;
+
+$default-font-size: 16;
+
+@function calculate-font-size($px-size) {
+  $rem-size: calc($px-size / $default-font-size);
+  @return #{$rem-size}rem;
+}
+
+//@for $i from 1 through 100 {
+//  $font-size-#{$i}: calculate-font-size(#{$i}px);
+//}
+
+$font-size-1: calculate-font-size(1);
+$font-size-2: calculate-font-size(2);
+$font-size-3: calculate-font-size(3);
+$font-size-4: calculate-font-size(4);
+$font-size-5: calculate-font-size(5);
+$font-size-6: calculate-font-size(6);
+$font-size-7: calculate-font-size(7);
+$font-size-8: calculate-font-size(8);
+$font-size-9: calculate-font-size(9);
+$font-size-10: calculate-font-size(10);
+$font-size-11: calculate-font-size(11);
+$font-size-12: calculate-font-size(12);
+$font-size-13: calculate-font-size(13);
+$font-size-14: calculate-font-size(14);
+$font-size-15: calculate-font-size(15);
+$font-size-16: calculate-font-size(16);
+$font-size-17: calculate-font-size(17);
+$font-size-18: calculate-font-size(18);
+$font-size-19: calculate-font-size(19);
+$font-size-20: calculate-font-size(20);
+$font-size-21: calculate-font-size(21);
+$font-size-22: calculate-font-size(22);
+$font-size-23: calculate-font-size(23);
+$font-size-24: calculate-font-size(24);
+$font-size-25: calculate-font-size(25);
+$font-size-26: calculate-font-size(26);
+$font-size-27: calculate-font-size(27);
+$font-size-28: calculate-font-size(28);
+$font-size-29: calculate-font-size(29);
+$font-size-30: calculate-font-size(30);
+$font-size-31: calculate-font-size(31);
+$font-size-32: calculate-font-size(32);
+$font-size-33: calculate-font-size(33);
+$font-size-34: calculate-font-size(34);
+$font-size-35: calculate-font-size(35);
+$font-size-36: calculate-font-size(36);
+$font-size-37: calculate-font-size(37);
+$font-size-38: calculate-font-size(38);
+$font-size-39: calculate-font-size(39);
+$font-size-40: calculate-font-size(40);
+$font-size-41: calculate-font-size(41);
+$font-size-42: calculate-font-size(42);
+$font-size-43: calculate-font-size(43);
+$font-size-44: calculate-font-size(44);
+$font-size-45: calculate-font-size(45);
+$font-size-46: calculate-font-size(46);
+$font-size-47: calculate-font-size(47);
+$font-size-48: calculate-font-size(48);
+$font-size-49: calculate-font-size(49);
+$font-size-50: calculate-font-size(50);
+$font-size-51: calculate-font-size(51);
+$font-size-52: calculate-font-size(52);
+$font-size-53: calculate-font-size(53);
+$font-size-54: calculate-font-size(54);
+$font-size-55: calculate-font-size(55);
+$font-size-56: calculate-font-size(56);
+$font-size-57: calculate-font-size(57);
+$font-size-58: calculate-font-size(58);
+$font-size-59: calculate-font-size(59);
+$font-size-60: calculate-font-size(60);
+$font-size-61: calculate-font-size(61);
+$font-size-62: calculate-font-size(62);
+$font-size-63: calculate-font-size(63);
+$font-size-64: calculate-font-size(64);
+$font-size-65: calculate-font-size(65);
+$font-size-66: calculate-font-size(66);
+$font-size-67: calculate-font-size(67);
+$font-size-68: calculate-font-size(68);
+$font-size-69: calculate-font-size(69);
+$font-size-70: calculate-font-size(70);
+$font-size-71: calculate-font-size(71);
+$font-size-72: calculate-font-size(72);
+$font-size-73: calculate-font-size(73);
+$font-size-74: calculate-font-size(74);
+$font-size-75: calculate-font-size(75);
+$font-size-76: calculate-font-size(76);
+$font-size-77: calculate-font-size(77);
+$font-size-78: calculate-font-size(78);
+$font-size-79: calculate-font-size(79);
+$font-size-80: calculate-font-size(80);
+$font-size-81: calculate-font-size(81);
+$font-size-82: calculate-font-size(82);
+$font-size-83: calculate-font-size(83);
+$font-size-84: calculate-font-size(84);
+$font-size-85: calculate-font-size(85);
+$font-size-86: calculate-font-size(86);
+$font-size-87: calculate-font-size(87);
+$font-size-88: calculate-font-size(88);
+$font-size-89: calculate-font-size(89);
+$font-size-90: calculate-font-size(90);
+$font-size-91: calculate-font-size(91);
+$font-size-92: calculate-font-size(92);
+$font-size-93: calculate-font-size(93);
+$font-size-94: calculate-font-size(94);
+$font-size-95: calculate-font-size(95);
+$font-size-96: calculate-font-size(96);
+$font-size-97: calculate-font-size(97);
+$font-size-98: calculate-font-size(98);
+$font-size-99: calculate-font-size(99);
+$font-size-100: calculate-font-size(100);
+
+//$body-color: $gray-900; // The default text color
+//$font-size-12:                0.75rem !default;
+//$font-size-14:                0.875rem !default;
+//$font-size-15:                0.938rem !default;
+//$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+//$font-size-18:                1.125rem !default;
+//$font-size-20:                1.25rem !default;
+//$font-size-22:                1.375rem !default;
+//$font-size-24:                1.5rem !default;
+//$font-size-26:                1.625rem !default;
+//$font-size-28:                1.75rem !default;
+//$font-size-36:                2rem !default;
+
+$headings-font-family:        $font-heading-1;
+$headings-font-weight:        700 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              $gray-800 !default;
+
+
+$h1-font-size:                $font-size-base * 4.375 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2.625 !default;
+$h4-font-size:                $font-size-base * 2.25 !default;
+$h5-font-size:                $font-size-base * 1.875 !default;
+$h6-font-size:                $font-size-base * 1.25 !default;
+
+
+$display-font-sizes: (
+  1: 4.375rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+) !default;
+
+
+$input-btn-padding-y:         0.688rem !default;
+$input-btn-padding-x:         1.25rem !default;
+$input-btn-font-size:         $font-size-18 !default;
+$btn-font-weight:  						600;
+$btn-border-radius:           220px !default;
+
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      1.25rem !default;
+$input-btn-font-size-sm:     $font-size-base !default;
+$btn-border-radius-sm:       100px !default;
+
+
+$input-btn-padding-y-lg:      .875rem !default;
+$input-btn-padding-x-lg:      2rem !default;
+$btn-font-size-lg:           	$font-size-22 !default;
+$btn-border-radius-lg:        220px !default;
+
+
+/*
+$input-btn-padding-x:         2.75rem !default;
+$input-btn-padding-y-lg:      .5rem !default;
+$input-btn-padding-x-lg:      1.25rem !default; */
+
+
+/* Navbar */
+$nav-link-font-size:        1.125rem !default;
+$nav-link-font-weight:       600 !default;
+
+/* Navbar Toggler
+$navbar-toggler-padding-y:          .25rem !default;
+$navbar-toggler-padding-x:          .75rem !default;
+$navbar-toggler-font-size:          $font-size-lg !default;
+$navbar-toggler-border-radius:      $btn-border-radius !default;
+$navbar-toggler-focus-width:        $btn-focus-width !default;
+*/

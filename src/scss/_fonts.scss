@@ -1,0 +1,48 @@
+//---------------------------------------------
+//
+//  Fonts
+//
+//    1. Loading Mixins
+//    2. Loading Fonts
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Loading Mixins
+//---------------------------------------------
+
+@import "mixins/google-fonts";
+
+//---------------------------------------------
+// 2. Loading Fonts
+//---------------------------------------------
+
+/*
+  400: "Regular",
+  500: "Medium",
+  600: "SemiBold",
+  700: "Bold",
+  900: "Black"
+*/
+
+@include googleFonts((
+  (
+    "name": "Delicious",
+    "folder": "DeliciousHandrawn",
+    "files": "DeliciousHandrawn",
+    "weights": (400)
+  ),
+  (
+    "name": "CircularStd",
+    "folder": "CircularStd",
+    "files": "CircularStd",
+    "weights": (500,700,900)
+  ),
+  (
+    "name": "LotaGrotesque",
+    "folder": "LotaGrotesque",
+    "files": "LotaGrotesqueAlt1",
+    "weights": (400,600,700)
+  ),  
+));
+

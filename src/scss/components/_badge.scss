@@ -1,0 +1,44 @@
+.badge {
+  display: inline-block;
+  font-weight: 600;
+  font-size: $font-size-12;
+  line-height: $font-size-20;
+  color: $blue;
+  border-radius: 24px;
+  padding: 2px 10px;
+
+  &.cyan {
+    background-color: #E3E8F7 !important;
+    a {
+      color: #2E4EB1 !important;
+    }
+  }
+
+  &.pink {
+    background-color: #FFF0F6 !important;
+    a {
+      color: #EB5582 !important;
+    }
+  }
+
+  &.yellow {
+    background-color: #FFFCDD !important;
+    a {
+      color: #C0A618 !important;
+    }
+  }
+
+  &.tertiary {
+    background-color: #DDFDF2 !important;
+    a {
+      color: #00996F !important;
+    }
+  }
+}
+
+.blog-card__badge, .blog-hero__slider-item {
+  .badge {
+    padding: 4px 12px;
+    font-size: $font-size-14;
+  }
+}

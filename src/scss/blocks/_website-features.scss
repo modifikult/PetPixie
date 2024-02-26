@@ -1,0 +1,35 @@
+section.website-features {
+  padding: 56px 0 50px;
+  background-color: transparent;
+
+  .section-header {
+    margin-bottom: 26px;
+  }
+
+  .card {
+    border: 1px solid $gray-100;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px !important;
+    height: 100%;
+
+    &-title {
+      font-weight: 600;
+      font-size: $font-size-18;
+      color: $gray-800;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    &-desc {
+      font-size: $font-size-base;
+    }
+
+    &-icon {
+      width: 64px;
+      height: 64px;
+      margin-right: 20px
+    }
+  }
+
+}

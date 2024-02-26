@@ -1,0 +1,30 @@
+.review-card {
+  padding: 25px 30px;
+  border-radius: 10px;
+  background: $teal-50;
+  .review-card {
+    &__top {
+
+    }
+    &__rating {
+      margin-right: 10px;
+      gap: 0 3px;
+      .rating-color {
+        color: #FFC107;
+      }
+    }
+    &__title {
+      font-size: $font-size-18;
+      line-height: 18px;
+      font-weight: 600;
+    }
+    &__subtitle {
+      font-size: $font-size-14;
+      margin-top: 7px;
+    }
+    &__text {
+      font-size: $font-size-15;
+      margin-top: 21px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.btn {
+  font-size: $font-size-base;
+  transition: .3s ease;
+
+  &:focus, &:active {
+    outline: none !important;
+    border: none !important;
+  }
+
+  &-secondary {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &-blue {
+    background-color: $blue;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $blue-600;
+    }
+  }
+
+  &-outline-blue {
+    border-color: $blue;
+    color: $blue;
+
+    &:hover {
+      color: #fff;
+      background: $blue;
+    }
+  }
+
+  &-pink {
+    background-color: $pink;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $pink-500;
+    }
+  }
+
+  &-tertiary {
+    background-color: $teal;
+    color: #000000;
+
+    &:hover {
+      color: #000000;
+      background-color: $teal-600;
+    }
+  }
+
+  &-accent {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $yellow-600;
+    }
+  }
+
+  &-dark {
+    color: #fff;
+    background-color: $gray-500;
+
+
+    &:hover {
+      background-color: $gray-800;
+    }
+  }
+
+  &-outline-dark {
+    border-color: $gray-700;
+    color: $gray-700;
+
+    &:hover {
+      color: #fff;
+      background: $gray-700;
+    }
+  }
+
+  &-grey {
+    color: $gray-700;
+    background-color: $gray-50;
+
+    &.current {
+      background-color: $yellow;
+    }
+
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+
+  &.btn-md {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  &.btn-lg {
+    padding: 15px 20px
+  }
+}

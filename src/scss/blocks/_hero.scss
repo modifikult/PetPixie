@@ -1,0 +1,117 @@
+section.hero {
+  overflow: hidden;
+
+  .hero {
+    &__wrap {
+      position: relative;
+    }
+
+    &__col {
+      &.col-left {
+        padding: 106px 40px 106px 0;
+        max-width: 600px;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-down(lg) {
+          padding: 60px 0;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding: 24px 0 38px;
+          max-width: unset;
+        }
+      }
+
+      &.col-right {
+        display: flex;
+        align-items: flex-end;
+        @include media-breakpoint-down(xl) {
+          align-items: center;
+        }
+        @include media-breakpoint-down(md) {
+          margin: 0 auto;
+        }
+
+        .hero__image {
+          position: relative;
+          width: 100%;
+          max-width: 607px;
+          height: 0;
+          overflow: hidden;
+          padding-bottom: 102.96%;
+          margin-bottom: -55px;
+          @include media-breakpoint-down(xl) {
+            margin-bottom: 0;
+          }
+          @include media-breakpoint-down(md) {
+            margin: 0 auto;
+            max-width: 100%;
+          }
+          //@include media-breakpoint-down(lg) {
+          //  margin-bottom: 0;
+          //}
+
+          img {
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            height: 100%;
+            inset: 0;
+          }
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 28px;
+
+      h1 {
+        color: $gray-900;
+        font-weight: 900;
+        margin-bottom: 0;
+        @include media-breakpoint-down(lg) {
+          font-size: 77px;
+          line-height: 78px;
+        }
+      }
+    }
+
+    &__desc {
+      font-size: $font-size-24;
+      line-height: 1.3;
+      color: $gray-600;
+      margin-bottom: 69px;
+
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 40px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 69px;
+      }
+    }
+
+    &__btn {
+      gap: 25px 15px;
+
+      .btn {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.4;
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+
+        &.btn-blue {
+          padding: 14px 27.5px;
+        }
+
+        &.btn-outline-blue {
+          padding: 14px 20px;
+        }
+      }
+    }
+  }
+}

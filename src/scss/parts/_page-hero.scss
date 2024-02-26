@@ -1,0 +1,84 @@
+section.page-hero {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .page-hero {
+    &__wrap {
+    }
+
+    &__text {
+      max-width: 696px;
+      padding: 100px 0 150px;
+      position: relative;
+      z-index: 2;
+      @include media-breakpoint-down(xl) {
+        padding: 60px 0 100px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding: 24px 0 43px;
+        max-width: unset;
+      }
+
+      h1 {
+      }
+
+      > span {
+        display: block;
+        margin-top: 28px;
+        font-size: $font-size-24;
+        line-height: $font-size-32;
+        @include media-breakpoint-down(xl) {
+          max-width: 600px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          max-width: unset;
+        }
+      }
+    }
+
+    &__image {
+
+      &.hero__image, &.category__image {
+        width: 612px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include media-breakpoint-down(xl) {
+          width: 400px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          position: unset;
+          max-width: 612px;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &.category__image {
+        width: 400px;
+        @include media-breakpoint-down(xl) {
+          width: 320px;
+        }
+        @include media-breakpoint-down(xl) {
+          max-width: 412px;
+        }
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

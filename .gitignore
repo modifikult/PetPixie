@@ -1,0 +1,6 @@
+# IDEA
+.idea
+
+# folders
+/node_modules
+.DS_Store

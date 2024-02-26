@@ -1,0 +1,99 @@
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, .7);
+  transition: .3 ease;
+
+  .container-lazyload {
+    width: 100%;
+    height: 100%;
+
+    a {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .lazy-load-div {
+      width: 100% !important;
+      height: 100% !important;
+
+      &:before {
+        content: '';
+        background: center / 100px no-repeat url('../../src/images/icons/play-icon.svg');
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+      }
+    }
+
+  }
+
+  video, img, iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  &.show-modal {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 100;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    @include media-breakpoint-down(xl) {
+      right: 20px;
+      top: 25px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      top: 40px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: $font-size-40;
+      color: #fff;
+    }
+  }
+
+  .modal-window__wrap {
+    width: 1000px;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      padding: 60px 20px;
+      height: 100%;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 80px 20px;
+    }
+
+    .video-src {
+      display: none;
+    }
+  }
+}

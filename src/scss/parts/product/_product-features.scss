@@ -1,0 +1,21 @@
+section.product-features {
+  margin: 91px 0;
+  @include media-breakpoint-down(lg) {
+    margin: 59px 0 50px;
+  }
+
+  .product-features {
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+      @include media-breakpoint-down(xl) {
+        gap: 10px;
+      }
+      @include media-breakpoint-down(lg) {
+        gap: 20px 30px;
+      }
+    }
+  }
+}

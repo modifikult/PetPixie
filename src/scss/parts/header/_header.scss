@@ -1,0 +1,262 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .3s ease;
+  z-index: 50;
+
+  &.header-fixed {
+    position: fixed;
+    background: #fff;
+    animation: fixedHeader .4s linear forwards;
+  }
+
+  &.header-unfixed {
+    position: fixed;
+    background: #fff;
+    animation: unfixedHeader .6s linear forwards;
+  }
+
+  &-open {
+    display: none;
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+      padding: 25px 17.5px;
+    }
+
+    span {
+      position: relative;
+      display: block;
+      width: 17px;
+      height: 2px;
+      border-radius: 3px;
+      background: $gray-900;
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border-radius: 3px;
+        background: $gray-900;
+        left: 0;
+      }
+
+      &:after {
+        bottom: -6.5px;
+      }
+
+      &:before {
+        top: -6.5px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-close {
+    padding: 17px;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      height: 72px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__logo {
+    width: 107px;
+    height: 76px;
+
+    @include media-breakpoint-down(lg) {
+      width: 70px;
+      height: 50px;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    &-item {
+      .menu {
+        display: flex;
+      }
+
+      .menu li a span {
+        color: $pink;
+
+        &:hover {
+          @include media-breakpoint-down(lg) {
+            color: #fff;
+          }
+        }
+      }
+
+      .menu li a {
+        display: block;
+        padding: 10px 18px;
+        color: $gray-600;
+        font-size: $font-size-18;
+        line-height: 26px;
+        font-weight: 600;
+        transition: .3s ease;
+
+        &:hover {
+          color: $blue;
+          @include media-breakpoint-down(lg) {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__mob {
+    display: none;
+    transform: translateY(-110%);
+    transition: .3s ease;
+
+    &.header-show {
+      transform: translateY(0);
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100vw;
+      height: 100vh;
+      background: $blue;
+    }
+
+    .header__nav {
+      height: 100%;
+
+      &-item {
+        padding-top: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow-y: auto;
+
+        .menu {
+          display: flex;
+          flex-direction: column;
+          gap: 36px;
+        }
+
+        .menu li a span {
+          color: $teal;
+        }
+
+        .menu li a {
+          font-weight: 400;
+          font-size: $font-size-24;
+          line-height: 32px;
+          padding: 0;
+          color: #FFFFFF;
+
+          &:hover {
+            color: unset;
+          }
+        }
+      }
+    }
+  }
+
+  &__country {
+    @include media-breakpoint-down(lg) {
+      margin-left: auto;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      background: $yellow-50;
+      border-radius: 220px;
+
+      .item__icon {
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+        @include media-breakpoint-down(lg) {
+          margin-right: 0;
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .item__label {
+        color: $gray-600;
+        font-weight: 600;
+        font-size: $font-size-base;
+        line-height: 24px;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fixedHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes unfixedHeader {
+  0% {
+    background: #fff;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+    background: transparent;
+    position: absolute;
+  }
+}

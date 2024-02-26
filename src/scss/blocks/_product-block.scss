@@ -1,0 +1,32 @@
+section.product-block {
+  &:not(:last-of-type) {
+    margin-bottom: 73px;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .product-block {
+    &__wrap {
+
+    }
+
+    &__title {
+      margin-bottom: 20px;
+
+      h3 {
+        font-weight: 900;
+        font-size: $font-size-42 !important;
+        line-height: $font-size-48;
+        margin: 0;
+        color: $blue;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+//---------------------------------------------
+//
+//  Table of Contents
+//
+//    1. Basics
+//    2. Page Layout
+//    3. Components
+//    4. Global
+//    5. Parts
+//    6. Blocks
+//    7. Pages
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Basics
+//---------------------------------------------
+
+@import "variables";
+@import "bootstrap";
+
+$bootstrap-icons-font-dir: "fonts/BoostrapIcons";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+@import "fonts";
+@import "typography";
+
+@import "../js/libs/slick/slick.css";
+@import "../js/libs/slick/slick-theme.css";
+
+
+// If you do not want to load the customized bootstrap version, just use the following line.
+// @import "~bootstrap/scss/bootstrap";
+
+//---------------------------------------------
+// 2. Page Layout
+//---------------------------------------------
+@import "headings";
+
+
+//---------------------------------------------
+// 3.Components
+//---------------------------------------------
+@import "components/button";
+@import "components/nav-pills";
+@import "components/badge";
+
+
+//---------------------------------------------
+// 4.Global
+//---------------------------------------------
+@import "global";
+
+
+//---------------------------------------------
+// 5.Parts
+//---------------------------------------------
+@import "parts/footer/footer";
+@import "parts/header/header";
+
+
+@import "parts/modal";
+@import "parts/breadcrumbs";
+@import "parts/best-seller";
+@import "parts/page-hero";
+@import "parts/products";
+@import "parts/related-articles";
+@import "parts/post-hero";
+@import "parts/team-card";
+
+
+@import "parts/blog/blog-hero";
+@import "parts/blog/blog-categories";
+@import "parts/blog/blog-card";
+@import "parts/blog/blog-posts";
+
+
+@import "parts/category/category";
+@import "parts/category/category-card";
+@import "parts/category/category-tabs";
+@import "parts/category/category-other-posts";
+
+
+@import "parts/product/product-hero";
+@import "parts/product/product-card";
+@import "parts/product/content";
+@import "parts/product/video";
+@import "parts/product/product-highlights";
+@import "parts/product/product-features";
+@import "parts/product/product-features-card";
+@import "parts/product/our-like-dislike";
+@import "parts/product/customer-reviews";
+@import "parts/product/review-card";
+@import "parts/product/product-benefits";
+@import "parts/product/sticky-product";
+@import "parts/product/product-faq";
+
+
+//---------------------------------------------
+// 6.Blocks
+//---------------------------------------------
+@import "blocks/hero";
+@import "blocks/website-features";
+@import "blocks/team";
+@import "blocks/product-categories";
+@import "blocks/products-tabs";
+@import "blocks/blog-articles";
+@import "blocks/social-media";
+@import "blocks/content-block";
+@import "blocks/product-block";
+
+
+//---------------------------------------------
+// 7.Pages
+//---------------------------------------------
+@import "pages/single-product";
+@import "pages/page-404";
+@import "pages/single-post";

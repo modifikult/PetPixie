@@ -1,0 +1,49 @@
+.product-categories__card {
+  .cyan {
+    background: #EAFAFF !important;
+
+    .card__subcategory-list-item {
+      border-bottom: 1px solid #C3DEED !important;
+
+      &:hover a {
+        color: #126886 !important;
+      }
+    }
+  }
+
+  .pink {
+    background: #FFEBF1 !important;
+
+    .card__subcategory-list-item {
+      border-bottom: 1px solid #F6C5D4 !important;
+
+      &:hover a {
+        color: #eb5582 !important;
+      }
+    }
+  }
+
+  .yellow {
+    background: #FFFCDD !important;
+
+    .card__subcategory-list-item {
+      border-bottom: 1px solid #EDE7AC !important;
+
+      &:hover a {
+        color: #C0A618 !important;
+      }
+    }
+  }
+
+  .tertiary {
+    background: #DDFDF2 !important;
+
+    .card__subcategory-list-item {
+      border-bottom: 1px solid #B7EAD8 !important;
+
+      &:hover a {
+        color: #00996F !important;
+      }
+    }
+  }
+}
